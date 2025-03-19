@@ -1,6 +1,6 @@
 {
   "name": "@turtle601/eslint-config",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "turtle601's custom eslint config",
   "main": "index.js",
   "repository": {

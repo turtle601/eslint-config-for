@@ -1,6 +1,10 @@
 module.exports = {
   // 필요한 플러그인을 여기에 정의합니다.
-  plugins: ['no-relative-import-paths'],
+  plugins: [
+    'no-relative-import-paths',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
+  ],
   extends: ['@rushstack/eslint-config/profile/web-app'],
   rules: {
     // RushStack의 변수 타입 정의 강제 규칙 비활성화
@@ -43,5 +47,9 @@ module.exports = {
   },
   settings: {
     // 공통으로 넣고 싶은 설정이 있으면 추가합니다.
+    'import/resolver': {
+      // import 해석기 설정 추가
+      typescript: {},
+    },
   },
 };

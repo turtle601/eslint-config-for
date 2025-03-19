@@ -1,10 +1,6 @@
 module.exports = {
   // 필요한 플러그인을 여기에 정의합니다.
-  plugins: [
-    'no-relative-import-paths',
-    'plugin:import/recommended',
-    'plugin:import/typescript',
-  ],
+  plugins: ['no-relative-import-paths'],
   extends: ['@rushstack/eslint-config/profile/web-app'],
   rules: {},
   settings: {
